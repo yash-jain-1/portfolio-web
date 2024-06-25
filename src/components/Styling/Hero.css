@@ -1,0 +1,131 @@
+#hero {
+    /* background: url("C:/Users/yashj/Downloads/Nerd Stuff/wallhaven-l8vp7y.jpg") no-repeat center center; */
+    background-size: cover;
+    height: 5vh;
+    display:inline;
+    justify-content: start;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  #hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(11, 11, 11, 0.69); /* Dark overlay */
+    z-index: -1;
+  }
+  
+  #hero h1 {
+    font-size: 3rem;
+    animation: extremeAnimation 3s ease-in-out infinite;
+  }
+  
+  #hero p {
+    font-size: 1.5rem;
+  }
+  
+  #hero a {
+    background: rgb(32, 0, 158); /* Red button */
+    color: #fff;
+    padding: 1.5rem 1rem;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+  }
+  
+  #hero a:hover {
+    background: rgb(73, 104, 255);
+  }
+  
+  
+  #hero a:hover {
+    background: rgb(77, 107, 255);
+  }
+  .container {
+    display: flex;
+  /*   border:1px solid red; */
+    height: 100%;
+    align-items: center;
+  }
+  
+  svg {
+      display: block;
+      font: 10.5em 'Montserrat';
+      width: 960px;
+      height: 300px;
+      margin: 0 auto;
+  }
+  
+  .text-copy {
+      fill: none;
+      stroke: white;
+      stroke-dasharray: 6% 29%;
+      stroke-width: 5px;
+      stroke-dashoffset: 0%;
+      animation: stroke-offset 5.5s infinite linear;
+  }
+  
+  .text-copy:nth-child(1){
+      stroke: #4D163D;
+      animation-delay: -1;
+  }
+  
+  .text-copy:nth-child(2){
+      stroke: #840037;
+      animation-delay: -2s;
+  }
+  
+  .text-copy:nth-child(3){
+      stroke: #BD0034;
+      animation-delay: -3s;
+  }
+  
+  .text-copy:nth-child(4){
+      stroke: #BD0034;
+      animation-delay: -4s;
+  }
+  
+  .text-copy:nth-child(5){
+      stroke: #FDB731;
+      animation-delay: -5s;
+  }
+  
+  @keyframes stroke-offset{
+      100% {stroke-dashoffset: -35%;}
+  }
+  
+  @keyframes extremeAnimation {
+    0% {
+      transform: scale(1) rotate(0deg);
+      color: #fff;
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+    25% {
+      transform: scale(1.2) rotate(0deg);
+      color: #d17aff; /* Light purple */
+      text-shadow: 0 0 10px rgba(177, 106, 246, 0.7); /* Lighter shade of purple */
+    }
+    50% {
+      transform: scale(1.5) rotate(0deg);
+      color: #9d55ff; /* Medium purple */
+      text-shadow: 0 0 15px rgba(126, 48, 229, 0.774); /* Medium shade of purple */
+    }
+    75% {
+      transform: scale(1.2) rotate(0deg);
+      color: #b378ff; /* Light purple */
+      text-shadow: 0 0 10px rgba(177, 106, 246, 0.7); /* Lighter shade of purple */
+    }
+    100% {
+      transform: scale(1) rotate(0deg);
+      color: #fff;
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+  }
+  
